@@ -1,6 +1,6 @@
 {
   "name": "ngx-ownui-component",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^12.2.0",
