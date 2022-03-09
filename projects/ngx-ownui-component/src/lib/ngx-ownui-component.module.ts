@@ -1,3 +1,4 @@
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgxOwnuiComponentComponent } from './ngx-ownui-component.component';
 
@@ -8,6 +9,7 @@ import { NgxOwnuiComponentComponent } from './ngx-ownui-component.component';
     NgxOwnuiComponentComponent
   ],
   imports: [
+    BrowserModule
   ],
   exports: [
     NgxOwnuiComponentComponent
