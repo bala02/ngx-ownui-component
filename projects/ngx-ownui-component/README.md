@@ -1,24 +1,41 @@
 # NgxOwnuiComponent
+## Getting Started
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
+ngx-ownui-component provides Bootstrap components powered by Angular, so you don't need to include original JS components.
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name --project ngx-ownui-component` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-ownui-component`.
-> Note: Don't forget to add `--project ngx-ownui-component` or else it will be added to the default project in your `angular.json` file. 
+### Angular CLI way
+Use the Angular CLI ng add command for updating your Angular project.
 
-## Build
+```javascript
+ng add ngx-ownui-component
+```
 
-Run `ng build ngx-ownui-component` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Manual way
+Install ngx-ownui-component from npm:
 
-## Publishing
+```javascript
+npm install ngx-ownui-component --save
+```
 
-After building your library with `ng build ngx-ownui-component`, go to the dist folder `cd dist/ngx-ownui-component` and run `npm publish`.
+Add wanted package to NgModule imports:
 
-## Running unit tests
+```javascript
+import { NgxOwnuiComponentModule } from 'ngx-ownui-component';
 
-Run `ng test ngx-ownui-component` to execute the unit tests via [Karma](https://karma-runner.github.io).
+@NgModule({
+  ...
+  imports: [NgxOwnuiComponentModule,...]
+  ...
+})
+```
 
-## Further help
+## Compatibility
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+|ngx-ownui-component  | Angular    |
+|-------------------- |:------------
+|0.0.4                | Angular 12 |
+
+## License
+MIT
