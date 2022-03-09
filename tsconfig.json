@@ -11,6 +11,12 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "paths": {
+      "ngx-ownui-component": [
+        "dist/ngx-ownui-component/ngx-ownui-component",
+        "dist/ngx-ownui-component"
+      ]
+    },
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
