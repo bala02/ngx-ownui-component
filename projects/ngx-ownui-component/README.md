@@ -35,7 +35,7 @@ import { NgxOwnuiComponentModule } from 'ngx-ownui-component';
 
 |ngx-ownui-component  | Angular    |
 |-------------------- |:------------
-|0.0.4                | Angular 12 |
+|0.0.5                | Angular 12 |
 
 ## License
 MIT
