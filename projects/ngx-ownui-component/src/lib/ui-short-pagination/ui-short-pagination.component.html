@@ -1,0 +1,8 @@
+<div>
+    <div style="display: flex;">
+        <a style="margin-right:10px" [ngClass]="{'disabled' : disable.minus }" (click)="pageChange('minus')">
+            < </a>
+                <div> {{currenIndex}} / {{totalPage}}</div>
+                <a style="margin-left:10px" [ngClass]="{'disabled' : disable.add }" (click)="pageChange('add')"> > </a>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+a{
+    cursor: pointer;
+}
+
+a.disabled {
+     cursor: not-allowed !important;
+ }
+
+ ul{
+     list-style:none;
+     display: inline-flex;
+     margin:0px;
+     padding: 0px;
+ }
+
+ li{
+     padding:10px
+ }
+
+ .active{
+     border:1px solid #000000;
+ }

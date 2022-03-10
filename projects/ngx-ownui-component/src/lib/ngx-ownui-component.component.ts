@@ -20,7 +20,7 @@ import { Component, OnInit, Input} from '@angular/core';
 })
 export class NgxOwnuiComponentComponent implements OnInit {
 
-  dropdownClicked = true;
+  dropdownClicked = false;
   @Input() optionList = Array();
   @Input() selectOption: any;
   @Input() isSearch = false;

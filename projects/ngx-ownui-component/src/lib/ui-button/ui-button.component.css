@@ -1,0 +1,17 @@
+.btn{
+    width: 7rem;
+    border: 1px solid;
+    text-align: center;
+    cursor: pointer;
+    height: 28px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center; /* Horizontal center alignment */
+}
+
+.disable{
+    cursor: not-allowed;
+    background: #efefef;
+    border: 1px solid #767676;
+}

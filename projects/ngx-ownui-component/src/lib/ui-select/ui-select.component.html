@@ -1,0 +1,10 @@
+<div style="position: relative; width: 100%;">
+    <div>
+      <div><input [value]="selectedValue" [readonly]="!isSearch" (click)="dropdownClicked = !dropdownClicked" (input)="searchResult($event)"></div>
+    </div>
+   
+    <div *ngIf="dropdownClicked">
+        <div *ngIf="isEmpty">No Data</div>
+        <ng-content></ng-content>
+    </div>
+</div>

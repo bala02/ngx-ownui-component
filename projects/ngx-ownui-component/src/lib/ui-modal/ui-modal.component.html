@@ -1,0 +1,17 @@
+<div *ngIf="visible" class="overlay">
+    <div class="main-dialog">
+        <div *ngIf="visible" class="dialog">
+            <div class="dialog-bg">
+                <div>
+                    <div>
+                        <div (click)="visible = false">
+                            X
+                        </div>
+                        <h4>{{title}}</h4>
+                    </div>
+                </div>
+                <ng-content></ng-content>   
+            </div>
+        </div>
+    </div>
+</div>
