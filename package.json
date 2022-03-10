@@ -1,6 +1,7 @@
 {
   "name": "ngx-ownui-component",
-  "version": "0.0.0",
+  "version": "0.0.4",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -23,7 +24,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~12.2.16",
+    "@angular-devkit/build-angular": "^13.2.5",
     "@angular/cli": "~12.2.9",
     "@angular/compiler-cli": "~12.2.0",
     "@types/jasmine": "~3.8.0",
