@@ -11,6 +11,11 @@ import { UiOptionComponent } from './ui-option/ui-option.component';
 import { UiModalComponent } from './ui-modal/ui-modal.component';
 import { UiShortPaginationComponent } from './ui-short-pagination/ui-short-pagination.component';
 import { UiDetailPaginationComponent } from './ui-detail-pagination/ui-detail-pagination.component';
+import { UiTooltipDirective } from './ui-tooltip/ui-tooltip.directive';
+import { UiAlertComponent } from './ui-alert/ui-alert.component';
+import { DropdowntoggleDirective } from './ui-dropdown/dropdowntoggle.directive';
+import { DropdownmenuDirective } from './ui-dropdown/dropdownmenu.directive';
+import { UiProgressbarComponent } from './ui-progressbar/ui-progressbar.component';
 @NgModule({
   declarations: [
     NgxOwnuiComponentComponent,
@@ -23,7 +28,12 @@ import { UiDetailPaginationComponent } from './ui-detail-pagination/ui-detail-pa
     UiOptionComponent,
     UiModalComponent,
     UiShortPaginationComponent,
-    UiDetailPaginationComponent
+    UiDetailPaginationComponent,
+    UiTooltipDirective,
+    UiAlertComponent,
+    DropdowntoggleDirective,
+    DropdownmenuDirective,
+    UiProgressbarComponent
   ],
   imports: [
     BrowserModule
@@ -39,7 +49,12 @@ import { UiDetailPaginationComponent } from './ui-detail-pagination/ui-detail-pa
     UiOptionComponent,
     UiModalComponent,
     UiShortPaginationComponent,
-    UiDetailPaginationComponent
+    UiDetailPaginationComponent,
+    UiTooltipDirective,
+    UiAlertComponent,
+    DropdowntoggleDirective,
+    DropdownmenuDirective,
+    UiProgressbarComponent
   ]
 })
 export class NgxOwnuiComponentModule { }

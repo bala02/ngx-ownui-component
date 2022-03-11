@@ -1,10 +1,10 @@
 <div [id]="id">
-    <div (click)="toggle.emit(id)">
+    <div (click)="selectedId(id)">
      <h4>{{title}}</h4> 
     </div>
 <div>
-<div [id]="id">
-  <div *ngIf="opened" class="content">
+<div [id]="id" *ngIf="isOpened">
+  <div  class="content">
     <div [@content]>
       <ng-content></ng-content>
     </div>
