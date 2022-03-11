@@ -1,10 +1,12 @@
-import { Directive } from '@angular/core';
+import { Directive, ElementRef } from '@angular/core';
 
 @Directive({
   selector: '[libDropdownmenu]'
 })
 export class DropdownmenuDirective {
 
-  constructor() { }
+  constructor(private elementref:ElementRef) {
+    this.elementref.nativeElement.classList.add('dropdown-menu')
+  }
 
 }
