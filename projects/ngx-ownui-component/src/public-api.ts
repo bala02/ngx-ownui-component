@@ -45,3 +45,9 @@ export * from './lib/ui-dropdown/dropdowntoggle.directive';
 
 //progress bar
 export * from './lib/ui-progressbar/ui-progressbar.component';
+
+//Range slider
+export * from './lib/ui-range-slider/ui-range-slider.component';
+
+//Drawer
+export * from './lib/ui-drawer/ui-drawer.component';

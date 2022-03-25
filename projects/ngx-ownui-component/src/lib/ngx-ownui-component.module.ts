@@ -16,6 +16,8 @@ import { UiAlertComponent } from './ui-alert/ui-alert.component';
 import { DropdowntoggleDirective } from './ui-dropdown/dropdowntoggle.directive';
 import { DropdownmenuDirective } from './ui-dropdown/dropdownmenu.directive';
 import { UiProgressbarComponent } from './ui-progressbar/ui-progressbar.component';
+import { UiRangeSliderComponent } from './ui-range-slider/ui-range-slider.component';
+import { UiDrawerComponent } from './ui-drawer/ui-drawer.component';
 @NgModule({
   declarations: [
     NgxOwnuiComponentComponent,
@@ -33,7 +35,9 @@ import { UiProgressbarComponent } from './ui-progressbar/ui-progressbar.componen
     UiAlertComponent,
     DropdowntoggleDirective,
     DropdownmenuDirective,
-    UiProgressbarComponent
+    UiProgressbarComponent,
+    UiRangeSliderComponent,
+    UiDrawerComponent
   ],
   imports: [
     BrowserModule
@@ -54,7 +58,9 @@ import { UiProgressbarComponent } from './ui-progressbar/ui-progressbar.componen
     UiAlertComponent,
     DropdowntoggleDirective,
     DropdownmenuDirective,
-    UiProgressbarComponent
+    UiProgressbarComponent,
+    UiRangeSliderComponent,
+    UiDrawerComponent
   ]
 })
 export class NgxOwnuiComponentModule { }
