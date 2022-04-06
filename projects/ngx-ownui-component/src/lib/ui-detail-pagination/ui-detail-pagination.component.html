@@ -1,52 +1,19 @@
-<div style="display: flex;" *ngIf="totalPage > 10">
-    <a style="margin-right:10px;margin-top:0.5rem;" [ngClass]="{'disabled' : disable.minus }"
-    (click)="pageIndexSetChange('minus')">
-    < </a>
-<div>
+
+<div class="pagination pagination_ul" *ngIf="totalPage > 10">
     <ul>
-        <div *ngIf="pageArr[0] > 5">
-            <li [ngClass]="{'active' : currenIndex == 1}" (click)="pageIndexSetChange(1)">
-                1
-            </li>
-        </div>
-
-        <div *ngIf="pageArr[0] >= 5">
-            <li (click)="pageIndexSetChange('decrement')">....</li>
-        </div>
-
-        <li *ngFor="let data of pageArr;let i = index" [ngClass]="{'active' : currenIndex == (data)}"
-            (click)="pageIndexSetChange(data)">
-            {{data}}
-        </li>
-
-        <div *ngIf="pageArr[pageArr.length-1] < totalPage">
-            <li (click)="pageIndexSetChange('increment')">...</li>
-        </div>
-
-        <div *ngIf="pageArr[pageArr.length-1] < totalPage">
-            <li [ngClass]="{'active' : currenIndex == totalPage}" (click)="pageIndexSetChange(totalPage)">
-                {{totalPage}}
-            </li>
-        </div>
+        <!--pages or li are comes from javascript -->
     </ul>
 </div>
-<a style="margin-left:10px;margin-top:0.5rem;" [ngClass]="{'disabled' : disable.add }"
-    (click)="pageIndexSetChange('add')"> > </a>
-</div>
 
-
-<div style="display:flex" *ngIf="totalPage <= 10">
-    <a style="margin-right:10px;margin-top:0.5rem;" [ngClass]="{'disabled' : disable.minus }"
-        (click)="pageChange('minus')">
-        < </a>
-            <div>
-                <ul>
-                    <li *ngFor="let data of counter(totalPage);let i = index"
-                        [ngClass]="{'active' : currenIndex == (i+1)}" (click)="pageChange(i+1)">
-                        {{i + 1}}
-                    </li>
-                </ul>
-            </div>
-            <a style="margin-left:10px;margin-top:0.5rem;" [ngClass]="{'disabled' : disable.add }"
-                (click)="pageChange('add')"> > </a>
+<div *ngIf="totalPage <= 10">
+    <div  class="pagination">
+        <ul>
+            <li class="btn prev"  *ngIf="pageIndex > 1" (click)="pageChange('minus')">Prev</li>
+            <li *ngFor="let data of counter(totalPage);let i = index" [ngClass]="{'active' : pageIndex == (i+1)}"
+                (click)="pageChange(i+1)" class="numb">
+                {{i + 1}}
+            </li>
+            <li class="btn next" *ngIf="pageIndex < totalPage" (click)="pageChange('add')">Next</li>
+        </ul>
+    </div>
 </div>
